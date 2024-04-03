@@ -5,21 +5,21 @@
 class Kuu < Formula
   desc "Remove blank lines from the beginning and end of the file. Also, make duplicate blank lines into one."
   homepage "https://github.com/winebarrel/kuu"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/winebarrel/kuu/releases/download/v0.1.0/kuu_0.1.0_darwin_amd64.tar.gz"
-      sha256 "6bff20e1d6cfcbc98170fd9565eae015ee8214ba1234d004d2f7448ebadd411d"
+      url "https://github.com/winebarrel/kuu/releases/download/v0.2.0/kuu_0.2.0_darwin_amd64.tar.gz"
+      sha256 "fed563d7ab01994396e481c8de7005ca128d6e4a7e5730935dcb7002bde4be10"
 
       def install
         bin.install 'kuu'
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/winebarrel/kuu/releases/download/v0.1.0/kuu_0.1.0_darwin_arm64.tar.gz"
-      sha256 "6ef14baf6bb3fdae9b3f5e112f85bc335818ebde20986028d764d3b82daff356"
+      url "https://github.com/winebarrel/kuu/releases/download/v0.2.0/kuu_0.2.0_darwin_arm64.tar.gz"
+      sha256 "1dcf07d133aa5480b5e254eb60ccc275a5f5844457169da12b7c6abfb91beb3f"
 
       def install
         bin.install 'kuu'
@@ -29,16 +29,16 @@ class Kuu < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/winebarrel/kuu/releases/download/v0.1.0/kuu_0.1.0_linux_amd64.tar.gz"
-      sha256 "23c1860c69b8161d7b4a397c3bd1ad80e9e96fd4f9abddb12def19bfcd6da1c1"
+      url "https://github.com/winebarrel/kuu/releases/download/v0.2.0/kuu_0.2.0_linux_amd64.tar.gz"
+      sha256 "3e9a743620c7354244dceadc78196270dfebd56f7086f45f0c6fa425b6f891be"
 
       def install
         bin.install 'kuu'
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/winebarrel/kuu/releases/download/v0.1.0/kuu_0.1.0_linux_arm64.tar.gz"
-      sha256 "69d8d8b784aef30fa3a8ea86d0f8723300ba6e045847211f9f7cb2917f8a7a21"
+      url "https://github.com/winebarrel/kuu/releases/download/v0.2.0/kuu_0.2.0_linux_arm64.tar.gz"
+      sha256 "66fcff172399739492793d0c1c010c3650e69cffca7b816973510fb6b1590f9e"
 
       def install
         bin.install 'kuu'
